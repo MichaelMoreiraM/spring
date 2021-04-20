@@ -2,6 +2,9 @@ package com.example.servicio;
 
 import java.util.List;
 
+import com.example.dominio.empleados;
+import com.example.repositorio.empleadorepositorio;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,17 +13,17 @@ import org.springframework.stereotype.Service;
 public class empleadosservicio {
 
  @Autowired
-  private empleadosRepositorio repro;
+  private empleadorepositorio repo;
 
-  public List<empleadosservicio>listAll(){
+  public List<empleados>listAll(){
       return repo.findAll();
   }
     
-  public void Save(empleadosservicio std){
+  public void Save(empleados std){
       repo.save(std);
   }
 
-  public empleadosservicio get(long id){
+  public empleados get(long id){
       return repo.findById(id).get();
   }
 
