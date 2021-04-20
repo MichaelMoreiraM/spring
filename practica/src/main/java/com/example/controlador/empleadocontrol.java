@@ -36,7 +36,7 @@ public String add(Model model){
 }
 
 @RequestMapping(value = "/save", method = RequestMethod.POST)
-public String saveempleado(@ModelAttribute("empleados") empleados std){
+public String saveempleado(@ModelAttribute("Empleados") empleados std){
     service.Save(std);
     return "redirect:/";
 }
@@ -45,7 +45,7 @@ public String saveempleado(@ModelAttribute("empleados") empleados std){
 public ModelAndView showEditEmpleadoPAge(@PathVariable(name="id")int id){
     ModelAndView mav=new ModelAndView("new");
     empleados std =service.get(id);
-    mav.addObject("empleados", std);
+    mav.addObject("Empleados", std);
     return mav;
 }
 
