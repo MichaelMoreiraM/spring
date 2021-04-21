@@ -23,11 +23,11 @@ public class empleadosservicio {
       repo.save(std);
   }
 
-  public empleados get(long id){
+  public empleados get(Integer id){
       return repo.findById(id).get();
   }
 
-  public void delete (long id){
+  public void delete (Integer id){
       repo.deleteById(id);
   }
 
