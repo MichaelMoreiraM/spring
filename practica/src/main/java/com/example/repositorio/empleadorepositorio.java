@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface empleadorepositorio extends JpaRepository<empleados, Integer>{
 
+
 } 
     
 
