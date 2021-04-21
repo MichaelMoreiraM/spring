@@ -8,7 +8,7 @@
 </head>
 <body>
 <div>
-	<h2 >Spring Boot Crud - Empleados Registro</h2>
+	<h2 >Spring Boot Crud - Registro Empleados</h2>
 	<tr>
 		<div align = "left" >		   
 		     <h3><a  th:href="@{'/new'}">Agregar Nuevo</a></h3>     
@@ -32,8 +32,8 @@
    	</tr>
   </thead>
   <tbody>
-      <tr  th:each="Empleados : ${listEmpleados}">
-		<td th:text="${Empleados.id_empleado}">ID EMPLEADO</td>
+      <tr  th:each="Empleados:${ListaEmpleados}">
+		<td th:text="${Empleados.id}">ID EMPLEADO</td>
 		<td th:text="${Empleados.nombre_emp}">NOMBRE</td>
 		<td th:text="${Empleados.apellido_emp}">APELLIDO</td>
 		<td th:text="${Empleados.Edad_emp}">EDAD</td>	

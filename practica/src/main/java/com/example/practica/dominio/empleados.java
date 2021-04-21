@@ -1,16 +1,18 @@
-package com.example.dominio;
+package com.example.practica.dominio;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
  
 @Entity
+@Table(name="datos")
 public class empleados {
     
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int id_empleado;
+    private int id;
     private String nombre_emp;
     private String apellido_emp;
     private int Edad_emp;
@@ -22,10 +24,10 @@ public class empleados {
    }
 
 
-   public empleados(int id_empleado,String nombre_emp,String
+   public empleados(int id,String nombre_emp,String
    apellido_emp, int Edad_emp, int telf_emp){
        super();
-       this.id_empleado=id_empleado;
+       this.id=id;
        this.nombre_emp=nombre_emp;
        this.apellido_emp=apellido_emp;
        this.Edad_emp=Edad_emp;
@@ -38,15 +40,15 @@ public class empleados {
     /**
      * @return int return the id_empleado
      */
-    public int getId_empleado() {
-        return id_empleado;
+    public int getId() {
+        return id;
     }
 
     /**
      * @param id_empleado the id_empleado to set
      */
-    public void setId_empleado(int id_empleado) {
-        this.id_empleado = id_empleado;
+    public void setId_empleado(int id) {
+        this.id = id;
     }
 
     /**

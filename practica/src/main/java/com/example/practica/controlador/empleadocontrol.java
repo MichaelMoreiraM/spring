@@ -1,9 +1,9 @@
-package com.example.controlador;
+package com.example.practica.controlador;
 
 import java.util.List;
 
-import com.example.dominio.empleados;
-import com.example.servicio.empleadosservicio;
+import com.example.practica.dominio.empleados;
+import com.example.practica.servicio.empleadosservicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,7 +27,7 @@ private empleadosservicio service;
 public String viewHomePage (Model modelo){
     List<empleados> listEmpleados =service.listAll();
     modelo.addAttribute("ListaEmpleados",listEmpleados);
-    System.out.println("Get /");
+    
     return "index";
 }
 

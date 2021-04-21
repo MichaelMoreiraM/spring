@@ -1,6 +1,6 @@
-package com.example.repositorio;
+package com.example.practica.repositorio;
 
-import com.example.dominio.empleados;
+import com.example.practica.dominio.empleados;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

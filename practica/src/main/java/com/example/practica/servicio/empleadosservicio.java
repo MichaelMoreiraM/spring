@@ -1,9 +1,9 @@
-package com.example.servicio;
+package com.example.practica.servicio;
 
 import java.util.List;
 
-import com.example.dominio.empleados;
-import com.example.repositorio.empleadorepositorio;
+import com.example.practica.dominio.empleados;
+import com.example.practica.repositorio.empleadorepositorio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
